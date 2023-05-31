@@ -27,7 +27,7 @@ describe('Registration and Autorization', () => {
         cy.contains('Email Address does not appear to be valid!')
             .should('be.visible');
 
-        cy.get('#AccountFrm_email').type('tanya.dynn14@gmail.com', { delay: 50 });
+        cy.get('#AccountFrm_email').type('tanya.dynn114@gmail.com', { delay: 50 });
 
         cy.get('#AccountFrm_telephone').type('380688944837');
         cy.get('#AccountFrm_fax').type('(044)-247-40-18');
@@ -63,7 +63,7 @@ describe('Registration and Autorization', () => {
         cy.contains('Login name must be alphanumeric only and between 5 and 64 characters!')
             .should('be.visible');
 
-        cy.get('#AccountFrm_loginname').type('dyntanyaa14', { delay: 50 });
+        cy.get('#AccountFrm_loginname').type('dyntanyaa114', { delay: 50 });
 
         cy.get('.lock-on-click').click();
         cy.contains('Password must be between 4 and 20 characters!')
@@ -94,6 +94,4 @@ describe('Registration and Autorization', () => {
         cy.get('[title="Login"]').click();
         cy.get('.heading1').should('contain', ' My Account');
     })
-
-
-});
+})
